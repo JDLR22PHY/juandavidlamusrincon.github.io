@@ -702,3 +702,11 @@ textarea {
   to {
     opacity: 0;
     top: 27px; } }
+
+.filterItems {
+  display: none; /* ocultar por defecto */
+}
+
+.filterItems.show {
+  display: block; /* mostrar cuando se agrega "show" */
+}
