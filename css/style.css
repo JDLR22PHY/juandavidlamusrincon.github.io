@@ -703,10 +703,7 @@ textarea {
     opacity: 0;
     top: 27px; } }
 
-.filterItems {
-  display: none; /* ocultar por defecto */
-}
-
-.filterItems.show {
-  display: block; /* mostrar cuando se agrega "show" */
+.projects__filters .skills__skill.active {
+  outline: 2px solid var(--themeColor, #6c63ff);
+  border-radius: 6px;
 }
