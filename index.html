@@ -184,6 +184,14 @@
             to learning and applying data-driven solutions.
           </span>
         </h2>
+        <!-- Botones de filtro -->
+        <div class="projects__filters">
+          <button class="skills__skill" onclick="filterSelection('all')">All</button>
+          <button class="skills__skill" onclick="filterSelection('python')">Python</button>
+          <button class="skills__skill" onclick="filterSelection('sql')">SQL</button>
+          <button class="skills__skill" onclick="filterSelection('powerbi')">Power BI</button>
+          <button class="skills__skill" onclick="filterSelection('rstudio')">RStudio</button>
+        </div>
         <div class="projects__content">
           <div class="projects__row">
             <div class="projects__row-img-cont">
@@ -308,5 +316,6 @@
     </footer>
 
     <script src="./index.js"></script>
+    <script src="assets/js/filter.js"></script>
   </body>
 </html>
