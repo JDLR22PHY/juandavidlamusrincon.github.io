@@ -172,101 +172,90 @@
           </div>
         </div>
       </div>
-    </section>
+      
     <section id="projects" class="projects sec-pad">
-      <div class="main-container">
-        <h2 class="heading heading-sec heading-sec__mb-bg">
-          <span class="heading-sec__main">Projects</span>
-          <span class="heading-sec__sub">
-            Welcome to my portfolio! This is a showcase of my journey in data analytics, 
-            where I explore real-world problems through Python, SQL, Excel, and Power BI. 
-            Each project reflects not only my technical skills, but also my commitment 
-            to learning and applying data-driven solutions.
-          </span>
-        </h2>
-        <!-- Botones de filtro -->
-        <div class="projects__filters">
-          <button class="skills__skill" onclick="filterSelection('all')">All</button>
-          <button class="skills__skill" onclick="filterSelection('python')">Python</button>
-          <button class="skills__skill" onclick="filterSelection('sql')">SQL</button>
-          <button class="skills__skill" onclick="filterSelection('powerbi')">Power BI</button>
-          <button class="skills__skill" onclick="filterSelection('rstudio')">RStudio</button>
+  <div class="main-container">
+    <h2 class="heading heading-sec heading-sec__mb-bg">
+      <span class="heading-sec__main">Projects</span>
+      <span class="heading-sec__sub">
+        Welcome to my portfolio! This is a showcase of my journey in data analytics, 
+        where I explore real-world problems through Python, SQL, Excel, and Power BI. 
+        Each project reflects not only my technical skills, but also my commitment 
+        to learning and applying data-driven solutions.
+      </span>
+    </h2>
+
+    <!-- Botones de filtro -->
+    <div class="projects__filters">
+      <button class="skills__skill" onclick="filterSelection('all')">All</button>
+      <button class="skills__skill" onclick="filterSelection('python')">Python</button>
+      <button class="skills__skill" onclick="filterSelection('sql')">SQL</button>
+      <button class="skills__skill" onclick="filterSelection('powerbi')">Power BI</button>
+      <button class="skills__skill" onclick="filterSelection('rstudio')">RStudio</button>
+    </div>
+
+    <!-- Sección de proyectos -->
+    <div class="projects__content">
+
+      <!-- Proyecto Python -->
+      <div class="projects__row filterItems python">
+        <div class="projects__row-img-cont">
+          <img src="./assets/jpeg/project-mockup-example.jpeg"
+               alt="Software Screenshot"
+               class="projects__row-img"
+               loading="lazy" />
         </div>
-        <div class="projects__content filterItems python">
-          <div class="projects__row">
-            <div class="projects__row-img-cont">
-              <img
-                src="./assets/jpeg/project-mockup-example.jpeg"
-                alt="Software Screenshot"
-                class="projects__row-img"
-                loading="lazy"
-              />
-            </div>
-            <div class="projects__row-content">
-              <h3 class="projects__row-content-title">Project 1</h3>
-              <p class="projects__row-content-desc">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic
-                facilis tempora, explicabo quae quod deserunt eius sapiente
-                praesentium.
-              </p>
-              <a
-                href="./project-1.html"
-                class="btn btn--med btn--theme dynamicBgClr"
-                target="_blank"
-                >Case Study</a
-              >
-            </div>
-          </div>
-          <div class="projects__row filterItems sql">
-            <div class="projects__row-img-cont">
-              <img
-                src="./assets/jpeg/project-mockup-example.jpeg"
-                alt="Software Screenshot"
-                class="projects__row-img"
-                loading="lazy"
-              />
-            </div>
-            <div class="projects__row-content">
-              <h3 class="projects__row-content-title">Project 2</h3>
-              <p class="projects__row-content-desc">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic
-                facilis tempora, explicabo quae quod deserunt eius sapiente
-                praesentium.
-              </p>
-              <a
-                href="./project-2.html"
-                class="btn btn--med btn--theme dynamicBgClr"
-                target="_blank"
-                >Case Study</a
-              >
-            </div>
-          </div>
-          <div class="projects__row filterItems all">
-            <div class="projects__row-img-cont">
-              <img
-                src="./assets/jpeg/project-mockup-example.jpeg"
-                alt="Software Screenshot"
-                class="projects__row-img"
-                loading="lazy"
-              />
-            </div>
-            <div class="projects__row-content">
-              <h3 class="projects__row-content-title">Project 3</h3>
-              <p class="projects__row-content-desc">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic
-                facilis tempora, explicabo quae quod deserunt eius sapiente
-                praesentium.
-              </p>
-              <a
-                href="./project-3.html"
-                class="btn btn--med btn--theme dynamicBgClr"
-                target="_blank"
-                >Case Study</a
-              >
-            </div>
-          </div>
+        <div class="projects__row-content">
+          <h3 class="projects__row-content-title">Project 1</h3>
+          <p class="projects__row-content-desc">
+            Proyecto hecho en Python.
+          </p>
+          <a href="./project-1.html"
+             class="btn btn--med btn--theme dynamicBgClr"
+             target="_blank">Case Study</a>
         </div>
       </div>
+
+      <!-- Proyecto SQL -->
+      <div class="projects__row filterItems sql">
+        <div class="projects__row-img-cont">
+          <img src="./assets/jpeg/project-mockup-example.jpeg"
+               alt="Software Screenshot"
+               class="projects__row-img"
+               loading="lazy" />
+        </div>
+        <div class="projects__row-content">
+          <h3 class="projects__row-content-title">Project 2</h3>
+          <p class="projects__row-content-desc">
+            Proyecto hecho en SQL.
+          </p>
+          <a href="./project-2.html"
+             class="btn btn--med btn--theme dynamicBgClr"
+             target="_blank">Case Study</a>
+        </div>
+      </div>
+
+      <!-- Proyecto Power BI -->
+      <div class="projects__row filterItems powerbi">
+        <div class="projects__row-img-cont">
+          <img src="./assets/jpeg/project-mockup-example.jpeg"
+               alt="Software Screenshot"
+               class="projects__row-img"
+               loading="lazy" />
+        </div>
+        <div class="projects__row-content">
+          <h3 class="projects__row-content-title">Project 3</h3>
+          <p class="projects__row-content-desc">
+            Proyecto hecho en Power BI.
+          </p>
+          <a href="./project-3.html"
+             class="btn btn--med btn--theme dynamicBgClr"
+             target="_blank">Case Study</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
     <footer class="main-footer">
       <div class="main-container">
         <div class="main-footer__upper">
