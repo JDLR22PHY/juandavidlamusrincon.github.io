@@ -173,92 +173,99 @@
         </div>
       </div>
  </section>
-    <section id="projects" class="projects sec-pad">
-      <div class="main-container">
-        <h2 class="heading heading-sec heading-sec__mb-bg">
-          <span class="heading-sec__main">Projects</span>
-          <span class="heading-sec__sub">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic facilis
-            tempora explicabo quae quod deserunt eius sapiente
-          </span>
-        </h2>
+<section id="projects" class="projects sec-pad">
+  <div class="main-container">
+    <h2 class="heading heading-sec heading-sec__mb-bg">
+      <span class="heading-sec__main">Projects</span>
+      <span class="heading-sec__sub">
+        Welcome to my portfolio! Filter projects by technology to explore what I’ve built.
+      </span>
+    </h2>
 
-        <div class="projects__content">
-          <div class="projects__row">
-            <div class="projects__row-img-cont">
-              <img
-                src="./assets/jpeg/project-mockup-example.jpeg"
-                alt="Software Screenshot"
-                class="projects__row-img"
-                loading="lazy"
-              />
-            </div>
-            <div class="projects__row-content">
-              <h3 class="projects__row-content-title">Project 1</h3>
-              <p class="projects__row-content-desc">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic
-                facilis tempora, explicabo quae quod deserunt eius sapiente
-                praesentium.
-              </p>
-              <a
-                href="./project-1.html"
-                class="btn btn--med btn--theme dynamicBgClr"
-                target="_blank"
-                >Case Study</a
-              >
-            </div>
-          </div>
-          <div class="projects__row">
-            <div class="projects__row-img-cont">
-              <img
-                src="./assets/jpeg/project-mockup-example.jpeg"
-                alt="Software Screenshot"
-                class="projects__row-img"
-                loading="lazy"
-              />
-            </div>
-            <div class="projects__row-content">
-              <h3 class="projects__row-content-title">Project 2</h3>
-              <p class="projects__row-content-desc">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic
-                facilis tempora, explicabo quae quod deserunt eius sapiente
-                praesentium.
-              </p>
-              <a
-                href="./project-2.html"
-                class="btn btn--med btn--theme dynamicBgClr"
-                target="_blank"
-                >Case Study</a
-              >
-            </div>
-          </div>
-          <div class="projects__row">
-            <div class="projects__row-img-cont">
-              <img
-                src="./assets/jpeg/project-mockup-example.jpeg"
-                alt="Software Screenshot"
-                class="projects__row-img"
-                loading="lazy"
-              />
-            </div>
-            <div class="projects__row-content">
-              <h3 class="projects__row-content-title">Project 3</h3>
-              <p class="projects__row-content-desc">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic
-                facilis tempora, explicabo quae quod deserunt eius sapiente
-                praesentium.
-              </p>
-              <a
-                href="./project-3.html"
-                class="btn btn--med btn--theme dynamicBgClr"
-                target="_blank"
-                >Case Study</a
-              >
-            </div>
-          </div>
+    <!-- Botones de filtro -->
+    <div class="projects__filters">
+      <button class="skills__skill active" onclick="filterSelection('all')">All</button>
+      <button class="skills__skill" onclick="filterSelection('python')">Python</button>
+      <button class="skills__skill" onclick="filterSelection('sql')">SQL</button>
+      <button class="skills__skill" onclick="filterSelection('powerbi')">Power BI</button>
+      <button class="skills__skill" onclick="filterSelection('excel')">Excel</button>
+    </div>
+
+    <div class="projects__content">
+      <!-- Project 1 -->
+      <div class="projects__row filterItems python">
+        <div class="projects__row-img-cont">
+          <img
+            src="./assets/jpeg/project-mockup-example.jpeg"
+            alt="Software Screenshot"
+            class="projects__row-img"
+            loading="lazy"
+          />
+        </div>
+        <div class="projects__row-content">
+          <h3 class="projects__row-content-title">Python EDA Project</h3>
+          <p class="projects__row-content-desc">
+            Exploratory Data Analysis using Python (Pandas, Matplotlib, Seaborn).
+          </p>
+          <a
+            href="./project-1.html"
+            class="btn btn--med btn--theme dynamicBgClr"
+            target="_blank"
+            >Case Study</a
+          >
         </div>
       </div>
-    </section>
+
+      <!-- Project 2 -->
+      <div class="projects__row filterItems sql">
+        <div class="projects__row-img-cont">
+          <img
+            src="./assets/jpeg/project-mockup-example.jpeg"
+            alt="Software Screenshot"
+            class="projects__row-img"
+            loading="lazy"
+          />
+        </div>
+        <div class="projects__row-content">
+          <h3 class="projects__row-content-title">SQL Analysis</h3>
+          <p class="projects__row-content-desc">
+            Query optimization and business insights with SQL.
+          </p>
+          <a
+            href="./project-2.html"
+            class="btn btn--med btn--theme dynamicBgClr"
+            target="_blank"
+            >Case Study</a
+          >
+        </div>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="projects__row filterItems powerbi">
+        <div class="projects__row-img-cont">
+          <img
+            src="./assets/jpeg/project-mockup-example.jpeg"
+            alt="Software Screenshot"
+            class="projects__row-img"
+            loading="lazy"
+          />
+        </div>
+        <div class="projects__row-content">
+          <h3 class="projects__row-content-title">Power BI Dashboard</h3>
+          <p class="projects__row-content-desc">
+            Interactive dashboards built with Power BI for business intelligence.
+          </p>
+          <a
+            href="./project-3.html"
+            class="btn btn--med btn--theme dynamicBgClr"
+            target="_blank"
+            >Case Study</a
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
     <footer class="main-footer">
       <div class="main-container">
         <div class="main-footer__upper">
@@ -308,6 +315,36 @@
     </footer>
 
     <script src="./index.js"></script>
-    <script src="assets/js/filter.js"></script>
+    <script>
+    function filterSelection(category) {
+      let items = document.getElementsByClassName("filterItems");
+    
+      // mostrar todo si category = all
+      if (category == "all") category = "";
+    
+      for (let i = 0; i < items.length; i++) {
+        items[i].style.display = "none"; // ocultar todos
+        if (items[i].className.indexOf(category) > -1) {
+          items[i].style.display = "flex"; // mostrar los que coincidan
+        }
+      }
+    }
+    
+    // Inicializar mostrando todo
+    filterSelection("all");
+    
+    // Marcar botón activo
+    let btns = document.getElementsByClassName("skills__skill");
+    for (let i = 0; i < btns.length; i++) {
+      btns[i].addEventListener("click", function () {
+        let current = document.getElementsByClassName("active");
+        if (current.length > 0) {
+          current[0].classList.remove("active");
+        }
+        this.classList.add("active");
+      });
+    }
+    </script>
+
   </body>
 </html>
