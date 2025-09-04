@@ -1,24 +1,48 @@
-  // Hacemos la función global para que los botones inline onclick la encuentren
-  window.filterSelection = function (category) {
-    const items = document.querySelectorAll('.filterItems');
+document.addEventListener('DOMContentLoaded', function () {
+  // --------------- helpers ----------------
+  window.filterSelection = function(category) {
+    const items = Array.from(document.querySelectorAll('.projects__row.filterItems, .filterItems'));
+    // normalize category
+    const cat = (category === 'all' || category === '') ? '' : category.trim();
 
     items.forEach(item => {
-      const match = (category === 'all') || item.classList.contains(category);
-      item.style.display = match ? 'flex' : 'none';
+      // si category vacío -> mostrar todo
+      if (!cat) {
+        // usar flex porque Dopefolio usa layout en fila
+        item.style.display = 'flex';
+      } else {
+        if (item.classList.contains(cat)) {
+          item.style.display = 'flex';
+        } else {
+          item.style.display = 'none';
+        }
+      }
     });
-
-    // Marcar botón activo visualmente
-    const container = document.querySelector('.projects__filters');
-    if (container) {
-      const btns = container.querySelectorAll('.skills__skill');
-      btns.forEach(b => b.classList.remove('active'));
-      // Busca el botón cuyo texto coincide (maneja "Power BI" -> powerbi)
-      const btn = Array.from(btns).find(b => b.textContent.toLowerCase().replace(/\s+/g,'') === category || (category === 'all' && b.textContent.trim().toLowerCase() === 'all'));
-      if (btn) btn.classList.add('active');
-    }
   };
 
-  // Mostrar todo al cargar
-  document.addEventListener('DOMContentLoaded', function () {
-    window.filterSelection('all');
-  });
+  // Botones: .projects__filters y botones .skills__skill
+  const container = document.querySelector('.projects__filters');
+  if (container) {
+    const btns = Array.from(container.querySelectorAll('.skills__skill'));
+
+    // click: agregar clase active (visual)
+    btns.forEach(btn => {
+      btn.addEventListener('click', function (e) {
+        btns.forEach(b => b.classList.remove('active'));
+        this.classList.add('active');
+
+        // Si usas inline onclick="filterSelection('python')", ignora esta línea.
+        // Pero por si no lo usas: inferir categoría desde texto del botón:
+        // const inferred = this.textContent.trim().toLowerCase().replace(/\s+/g,'');
+        // window.filterSelection(inferred);
+      });
+    });
+  }
+
+  // Mostrar todos al inicio
+  window.filterSelection('all');
+
+  // DEBUG logs — borra si quieres
+  console.log('Filter initialized. Items:', document.querySelectorAll('.filterItems').length,
+              'Buttons:', container ? container.querySelectorAll('.skills__skill').length : 0);
+});
