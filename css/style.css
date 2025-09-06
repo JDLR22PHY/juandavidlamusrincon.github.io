@@ -707,3 +707,12 @@ textarea {
   outline: 2px solid var(--themeColor, #6c63ff);
   border-radius: 6px;
 }
+
+.project-details__desc ul {
+  list-style-type: disc;   /* bring back bullets */
+  margin-left: 2rem;       /* add indentation */
+  padding-left: 2rem;
+  color: grey;             /* optional: match your text color */
+  font-size: 1.8rem;       /* optional: match paragraph size */
+  line-height: 1.7;
+}
