@@ -103,7 +103,7 @@ textarea {
     top: calc(100% + 1.5rem);
     height: 5px;
     width: 3rem;
-    background: #0062b9;
+    background: #000000;
     left: 50%;
     transform: translateX(-50%);
     border-radius: 5px; }
@@ -712,7 +712,7 @@ textarea {
   list-style-type: disc;   /* bring back bullets */
   margin-left: 2rem;       /* add indentation */
   padding-left: 2rem;
-  color: grey;             /* optional: match your text color */
+  color: black;             /* optional: match your text color */
   font-size: 1.8rem;       /* optional: match paragraph size */
   line-height: 1.7;
 }
