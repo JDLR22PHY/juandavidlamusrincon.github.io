@@ -76,60 +76,64 @@
     </header>
     <section class="project-cs-hero">
       <div class="project-cs-hero__content">
-        <h1 class="heading-primary">Medical Visualizator</h1>
+        <h1 class="heading-primary">Forum Page Views Analysis</h1>
         <div class="project-cs-hero__info">
           <p class="text-primary">
-            Data analysis project visualizing medical examination records to explore links between 
-          cardiac disease, body measurements, and lifestyle factors.
+            Data analysis project visualizing forum page views in freecodecamp to explore trends, yearly patterns, 
+            and monthly growth between 2016 and 2019.
           </p>
         </div>
       </div>
     </section>
-    <section class="project-details">
-      <div class="main-container">
-        <div class="project-details__content">
-          <div class="project-details__showcase-img-cont">
-          </div>
-          <div class="project-details__content-main">
-            <div class="project-details__desc">
+            <section class="project-details">
+          <div class="main-container">
+            <div class="project-details__content">
+              <div class="project-details__showcase-img-cont">
+              </div>
+              <div class="project-details__content-main">
+                <div class="project-details__desc">
+                  
+                  <h3 class="project-details__content-title">Project Overview</h3>
+                  <p class="project-details__desc-para">
+                    This project analyzes and visualizes <strong>daily page views</strong> on the 
+                    <strong>freeCodeCamp Forum</strong> from 2016 to 2019. 
+                    The goal is to uncover trends, yearly patterns, and monthly growth using time series analysis.
+                  </p>
               
-              <h3 class="project-details__content-title">Project Overview</h3>
-              <p class="project-details__desc-para">
-                This project analyzes and visualizes data collected during <strong>medical examinations</strong>. 
-                The dataset includes information about patients, such as <strong>body measurements</strong>, 
-                <strong>blood test results</strong>, and <strong>lifestyle choices</strong>.
-              </p>
-          
-              <p class="project-details__desc-para">The main goals are to:</p>
-              <ul>
-                <li>Visualize medical data to detect potential correlations.</li>
-                <li>Perform calculations to better understand risk factors.</li>
-              </ul>
-          
-              <h3 class="project-details__content-title">Dataset</h3>
-              <ul>
-                <li><strong>Rows</strong>: Each row corresponds to a patient.</li>
-                <li><strong>Columns</strong>: Body measurements, blood test results, and lifestyle-related variables.</li>
-                <li><strong>Target</strong>: Cardiac disease indicator (1 = disease, 0 = no disease).</li>
-              </ul>
-          
-              <h3 class="project-details__content-title">Methodology</h3>
-              <ul>
-                <li><strong>Data Preparation</strong>: Clean the dataset and create new variables (e.g., overweight indicator).</li>
-                <li><strong>Exploratory Analysis</strong>: Generate descriptive statistics and compare distributions.</li>
-                <li><strong>Visualizations</strong>: 
-                  Categorical Plot: Lifestyle factors (smoking, alcohol, activity) vs. cardiac disease. 
-                  Heatmap: Correlations between body measurements, blood markers, and lifestyle choices.
-                </li>
-              </ul>
+                  <p class="project-details__desc-para">The main goals are to:</p>
+                  <ul>
+                    <li>Visualize daily forum activity through line, bar, and box plots.</li>
+                    <li>Identify seasonal patterns and long-term growth trends.</li>
+                  </ul>
               
-              <h3 class="project-details__content-title">Results</h3>
-              <ul>
-                <li>Lifestyle choices and body measurements differ between patients with and without cardiac disease.</li>
-                <li>Strong correlations appear between certain medical indicators, suggesting potential risk factors.</li>
-              </ul>
-          
+                  <h3 class="project-details__content-title">Dataset</h3>
+                  <ul>
+                    <li><strong>Rows</strong>: Each row represents one day of page views.</li>
+                    <li><strong>Columns</strong>: Includes the date and number of page views.</li>
+                    <li><strong>Period</strong>: May 2016 – December 2019.</li>
+                  </ul>
+              
+                  <h3 class="project-details__content-title">Methodology</h3>
+                  <ul>
+                    <li><strong>Data Preparation</strong>: Load and clean the dataset to handle anomalies and outliers.</li>
+                    <li><strong>Exploratory Analysis</strong>: Study general trends and fluctuations across years.</li>
+                    <li><strong>Visualizations</strong>: 
+                      Line Chart: Long-term daily trends. 
+                      Bar Chart: Average monthly views per year. 
+                      Box Plots: Distribution of views across years and months.
+                    </li>
+                  </ul>
+                  
+                  <h3 class="project-details__content-title">Results</h3>
+                  <ul>
+                    <li>The forum shows clear <strong>seasonal patterns</strong> in activity, with certain months being consistently more active.</li>
+                    <li>There is evidence of <strong>overall growth</strong> in forum usage over the analyzed period.</li>
+                  </ul>
+              
+                </div>
+              </div>
             </div>
+          </div>
           </div>
             <div class="project-details__tools-used">
             <h3 class="project-details__content-title">Tools Used</h3>
