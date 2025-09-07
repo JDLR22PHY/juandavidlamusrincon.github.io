@@ -712,8 +712,11 @@ textarea {
   list-style-type: disc;   /* bring back bullets */
   margin-left: 2rem;       /* add indentation */
   padding-left: 2rem;
-  color: black;             /* optional: match your text color */
+  color: gray ;             /* optional: match your text color */
   font-size: 1.8rem;       /* optional: match paragraph size */
   line-height: 1.7;
 }
 
+.project-details__desc li::marker {
+  color: black;   /* asegura que el bullet sea negro */
+}
