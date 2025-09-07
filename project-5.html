@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Project Python</title>
+    <meta name="description" content="Case study page of Project" />
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__content">
+        <div class="header__logo-container">
+          <div class="header__logo-img-cont">
+            <img
+              src="./assets/png/jdlr.png"
+              alt="Ram Maheshwari Logo Image"
+              class="header__logo-img"
+            />
+          </div>
+          <span class="header__logo-sub">Juan D. Lamus</span>
+        </div>
+        <div class="header__main">
+          <ul class="header__links">
+            <li class="header__link-wrapper">
+              <a href="./index.html" class="header__link"> Home </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./index.html#about" class="header__link">About </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./index.html#projects" class="header__link">
+                Projects
+              </a>
+          </ul>
+          <div class="header__main-ham-menu-cont">
+            <img
+              src="./assets/svg/ham-menu.svg"
+              alt="hamburger menu"
+              class="header__main-ham-menu"
+            />
+            <img
+              src="./assets/svg/ham-menu-close.svg"
+              alt="hamburger menu close"
+              class="header__main-ham-menu-close d-none"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="header__sm-menu">
+        <div class="header__sm-menu-content">
+          <ul class="header__sm-menu-links">
+            <li class="header__sm-menu-link">
+              <a href="./index.html"> Home </a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="./index.html#about"> About </a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="./index.html#projects"> Projects </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <section class="project-cs-hero">
+      <div class="project-cs-hero__content">
+        <h1 class="heading-primary">Medical Visualizator</h1>
+        <div class="project-cs-hero__info">
+          <p class="text-primary">
+            Data analysis project visualizing medical examination records to explore links between 
+          cardiac disease, body measurements, and lifestyle factors.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="project-details">
+      <div class="main-container">
+        <div class="project-details__content">
+          <div class="project-details__showcase-img-cont">
+          </div>
+          <div class="project-details__content-main">
+            <div class="project-details__desc">
+              
+              <h3 class="project-details__content-title">Project Overview</h3>
+              <p class="project-details__desc-para">
+                This project analyzes and visualizes data collected during <strong>medical examinations</strong>. 
+                The dataset includes information about patients, such as <strong>body measurements</strong>, 
+                <strong>blood test results</strong>, and <strong>lifestyle choices</strong>.
+              </p>
+          
+              <p class="project-details__desc-para">The main goals are to:</p>
+              <ul>
+                <li>Visualize medical data to detect potential correlations.</li>
+                <li>Perform calculations to better understand risk factors.</li>
+              </ul>
+          
+              <h3 class="project-details__content-title">Dataset</h3>
+              <ul>
+                <li><strong>Rows</strong>: Each row corresponds to a patient.</li>
+                <li><strong>Columns</strong>: Body measurements, blood test results, and lifestyle-related variables.</li>
+                <li><strong>Target</strong>: Cardiac disease indicator (1 = disease, 0 = no disease).</li>
+              </ul>
+          
+              <h3 class="project-details__content-title">Methodology</h3>
+              <ul>
+                <li><strong>Data Preparation</strong>: Clean the dataset and create new variables (e.g., overweight indicator).</li>
+                <li><strong>Exploratory Analysis</strong>: Generate descriptive statistics and compare distributions.</li>
+                <li><strong>Visualizations</strong>: 
+                  Categorical Plot: Lifestyle factors (smoking, alcohol, activity) vs. cardiac disease. 
+                  Heatmap: Correlations between body measurements, blood markers, and lifestyle choices.
+                </li>
+              </ul>
+              
+              <h3 class="project-details__content-title">Results</h3>
+              <ul>
+                <li>Lifestyle choices and body measurements differ between patients with and without cardiac disease.</li>
+                <li>Strong correlations appear between certain medical indicators, suggesting potential risk factors.</li>
+              </ul>
+          
+            </div>
+          </div>
+            <div class="project-details__tools-used">
+            <h3 class="project-details__content-title">Tools Used</h3>
+            <div class="skills">
+              <div class="skills__skill">Python</div>
+              <div class="skills__skill">Pandas</div>
+              <div class="skills__skill">Seaborn</div>
+              <div class="skills__skill">Matplotlib</div>
+              <div class="skills__skill">Jupyter Notebook</div>
+              <div class="skills__skill">Visual Studio Code</div>
+            </div>
+            <div class="project-details__links">
+              <h3 class="project-details__content-title">See Live</h3>
+              <a
+                href="https://github.com/JDLR22PHY/PythonProjects/blob/main/projects/medical_data_visualizar.ipynb"
+                class="btn btn--med btn--theme-inv project-details__links-btn"
+                target="_blank"
+                >Code Link</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="main-footer">
+      <div class="main-container">
+        <div class="main-footer__upper">
+          <div class="main-footer__row main-footer__row-1">
+            <h2 class="heading heading-sm main-footer__heading-sm">
+              <span>Social</span>
+            </h2>
+            <div class="main-footer__social-cont">
+              <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/lamusrinconjd/">
+                <img
+                  class="main-footer__icon"
+                  src="./assets/png/linkedin-ico.png"
+                  alt="icon"
+                />
+              </a>
+              <a target="_blank" rel="noreferrer" href="https://github.com/JDLR22PHY">
+                <img
+                  class="main-footer__icon"
+                  src="./assets/png/github-ico.png"
+                  alt="icon"
+                />
+              </a>
+              <a target="_blank" rel="noreferrer" href="#">
+                <img
+                  class="main-footer__icon"
+                  src="./assets/png/twitter-ico.png"
+                  alt="icon"
+                />
+              </a>
+              <a target="_blank" rel="noreferrer" href="#">
+                <img
+                  class="main-footer__icon main-footer__icon--mr-none"
+                  src="./assets/png/insta-ico.png"
+                  alt="icon"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="main-footer__row main-footer__row-2">
+            <h4 class="heading heading-sm text-lt">Juand D. Lamus</h4>
+            <p class="main-footer__short-desc">
+              | DATA SCIENCE | DATA ANALYST |
+            </p>
+          </div>
+        </div>
+        </div>
+      </div>
+    </footer>
+    <script src="./index.js"></script>
+  </body>
+</html>
