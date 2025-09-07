@@ -76,11 +76,11 @@
     </header>
     <section class="project-cs-hero">
       <div class="project-cs-hero__content">
-        <h1 class="heading-primary">Medical Visualizator</h1>
+        <h1 class="heading-primary">Sea Level predictor</h1>
         <div class="project-cs-hero__info">
           <p class="text-primary">
-            Data analysis project visualizing medical examination records to explore links between 
-          cardiac disease, body measurements, and lifestyle factors.
+            Data analysis project predicting <strong>global sea level rise</strong> using historical data (1880–2014) 
+            and regression models to project changes through 2050.
           </p>
         </div>
       </div>
@@ -90,47 +90,50 @@
         <div class="project-details__content">
           <div class="project-details__showcase-img-cont">
           </div>
-          <div class="project-details__content-main">
-            <div class="project-details__desc">
-              
-              <h3 class="project-details__content-title">Project Overview</h3>
-              <p class="project-details__desc-para">
-                This project analyzes and visualizes data collected during <strong>medical examinations</strong>. 
-                The dataset includes information about patients, such as <strong>body measurements</strong>, 
-                <strong>blood test results</strong>, and <strong>lifestyle choices</strong>.
-              </p>
-          
-              <p class="project-details__desc-para">The main goals are to:</p>
-              <ul>
-                <li>Visualize medical data to detect potential correlations.</li>
-                <li>Perform calculations to better understand risk factors.</li>
-              </ul>
-          
-              <h3 class="project-details__content-title">Dataset</h3>
-              <ul>
-                <li><strong>Rows</strong>: Each row corresponds to a patient.</li>
-                <li><strong>Columns</strong>: Body measurements, blood test results, and lifestyle-related variables.</li>
-                <li><strong>Target</strong>: Cardiac disease indicator (1 = disease, 0 = no disease).</li>
-              </ul>
-          
-              <h3 class="project-details__content-title">Methodology</h3>
-              <ul>
-                <li><strong>Data Preparation</strong>: Clean the dataset and create new variables (e.g., overweight indicator).</li>
-                <li><strong>Exploratory Analysis</strong>: Generate descriptive statistics and compare distributions.</li>
-                <li><strong>Visualizations</strong>: 
-                  Categorical Plot: Lifestyle factors (smoking, alcohol, activity) vs. cardiac disease. 
-                  Heatmap: Correlations between body measurements, blood markers, and lifestyle choices.
-                </li>
-              </ul>
-              
-              <h3 class="project-details__content-title">Results</h3>
-              <ul>
-                <li>Lifestyle choices and body measurements differ between patients with and without cardiac disease.</li>
-                <li>Strong correlations appear between certain medical indicators, suggesting potential risk factors.</li>
-              </ul>
-          
+            <div class="project-details__content-main">
+              <div class="project-details__desc">
+            
+                <h3 class="project-details__content-title">Project Overview</h3>
+                <p class="project-details__desc-para">
+                  This project analyzes historical data on <strong>global sea levels</strong> from 1880 to 2014, 
+                  and applies regression models to <strong>predict sea level rise</strong> through the year 2050.
+                </p>
+            
+                <p class="project-details__desc-para">The main goals are to:</p>
+                <ul>
+                  <li>Visualize long-term trends in global sea level rise.</li>
+                  <li>Apply regression models to predict future sea levels.</li>
+                  <li>Compare projections based on full data vs. recent data.</li>
+                </ul>
+            
+                <h3 class="project-details__content-title">Dataset</h3>
+                <ul>
+                  <li><strong>Source</strong>: US Environmental Protection Agency (EPA), using CSIRO (2015) and NOAA (2015).</li>
+                  <li><strong>Years</strong>: 1880–2014.</li>
+                  <li><strong>Variables</strong>: Year and adjusted sea level (inches).</li>
+                </ul>
+            
+                <h3 class="project-details__content-title">Methodology</h3>
+                <ul>
+                  <li><strong>Data Preparation</strong>: Load and clean the dataset for analysis.</li>
+                  <li><strong>Regression Models</strong>: 
+                    <ul>
+                      <li>Model 1: Fit using all data (1880–2014).</li>
+                      <li>Model 2: Fit using only recent data (2000–2014).</li>
+                    </ul>
+                  </li>
+                  <li><strong>Visualization</strong>: Scatter plot with best-fit regression lines.</li>
+                </ul>
+            
+                <h3 class="project-details__content-title">Results</h3>
+                <ul>
+                  <li>Both regression models show a clear upward trend in sea level rise.</li>
+                  <li>Predictions differ depending on whether all historical data or only recent data is used, 
+                      suggesting possible acceleration in recent years.</li>
+                </ul>
+            
+              </div>
             </div>
-          </div>
             <div class="project-details__tools-used">
             <h3 class="project-details__content-title">Tools Used</h3>
             <div class="skills">
