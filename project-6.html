@@ -76,63 +76,60 @@
     </header>
     <section class="project-cs-hero">
       <div class="project-cs-hero__content">
-        <h1 class="heading-primary">Sea Level predictor</h1>
+        <h1 class="heading-primary">Mobile Network Coverage Analysis in Colombia</h1>
         <div class="project-cs-hero__info">
           <p class="text-primary">
-            Data analysis project predicting <strong>global sea level rise</strong> using historical data (1880–2014) 
-            and regression models to project changes through 2050.
+            his project analyzes the evolution of mobile network coverage (2G, 3G, 4G, LTE, and 5G) in Colombia using open government datasets from 2014 to recent years.
+            The analysis includes data cleaning, handling missing values, and exploratory visualizations at the department, municipality, and populated center levels, as well as by main telecom providers.
           </p>
         </div>
-      </div>
-    </section>
-    <section class="project-details">
-      <div class="main-container">
-        <div class="project-details__content">
-          <div class="project-details__showcase-img-cont">
-          </div>
-            <div class="project-details__content-main">
-              <div class="project-details__desc">
-            
-                <h3 class="project-details__content-title">Project Overview</h3>
-                <p class="project-details__desc-para">
-                  This project analyzes historical data on <strong>global sea levels</strong> from 1880 to 2014, 
-                  and applies regression models to <strong>predict sea level rise</strong> through the year 2050.
-                </p>
-            
-                <p class="project-details__desc-para">The main goals are to:</p>
-                <ul>
-                  <li>Visualize long-term trends in global sea level rise.</li>
-                  <li>Apply regression models to predict future sea levels.</li>
-                  <li>Compare projections based on full data vs. recent data.</li>
-                </ul>
-            
-                <h3 class="project-details__content-title">Dataset</h3>
-                <ul>
-                  <li><strong>Source</strong>: US Environmental Protection Agency (EPA), using CSIRO (2015) and NOAA (2015).</li>
-                  <li><strong>Years</strong>: 1880–2014.</li>
-                  <li><strong>Variables</strong>: Year and adjusted sea level (inches).</li>
-                </ul>
-            
-                <h3 class="project-details__content-title">Methodology</h3>
-                <ul>
-                  <li><strong>Data Preparation</strong>: Load and clean the dataset for analysis.</li>
-                  <li><strong>Regression Models</strong>: 
-                    <ul>
-                      <li>Model 1: Fit using all data (1880–2014).</li>
-                      <li>Model 2: Fit using only recent data (2000–2014).</li>
-                    </ul>
-                  </li>
-                  <li><strong>Visualization</strong>: Scatter plot with best-fit regression lines.</li>
-                </ul>
-            
-                <h3 class="project-details__content-title">Results</h3>
-                <ul>
-                  <li>Both regression models show a clear upward trend in sea level rise.</li>
-                  <li>Predictions differ depending on whether all historical data or only recent data is used, 
-                      suggesting possible acceleration in recent years.</li>
-                </ul>
-            
+        </div>
+        </section>
+        <section class="project-details">
+          <div class="main-container">
+            <div class="project-details__content">
+              <div class="project-details__showcase-img-cont">
               </div>
+                <div class="project-details__content-main">
+                  <div class="project-details__desc">
+              
+                    <h3 class="project-details__content-title">Project Overview</h3>
+                    <p class="project-details__desc-para">
+                      This project explores the evolution of <strong>mobile network coverage</strong> (2G, 3G, 4G, LTE, and 5G) 
+                      in <strong>Colombia</strong> using open government datasets from 2014 to recent years. 
+                      The analysis focuses on <strong>geographic coverage</strong> at the department, municipality, and populated center levels, 
+                      as well as coverage by <strong>major telecom providers</strong>.
+                    </p>
+              
+                    <p class="project-details__desc-para">The main goals are to:</p>
+                    <ul>
+                      <li>Clean and prepare the dataset, addressing missing values such as municipal codes.</li>
+                      <li>Explore the adoption of mobile technologies (2G–5G) across time and regions.</li>
+                      <li>Visualize coverage distribution among providers and geographic areas.</li>
+                    </ul>
+              
+                    <h3 class="project-details__content-title">Dataset</h3>
+                    <ul>
+                      <li><strong>Source</strong>: Open government data (Ministerio de Tecnologías de la Información y Comunicaciones de Colombia).</li>
+                      <li><strong>Years</strong>: 2014–present.</li>
+                      <li><strong>Variables</strong>: Technology type, department, municipality, populated center, provider, and coverage level.</li>
+                    </ul>
+              
+                    <h3 class="project-details__content-title">Methodology</h3>
+                    <ul>
+                      <li><strong>Data Preparation</strong>: Cleaning null values and correcting missing municipality codes (e.g., Mapiripán).</li>
+                      <li><strong>Exploratory Analysis</strong>: Descriptive statistics and identification of coverage patterns.</li>
+                      <li><strong>Visualization</strong>: Line plots, bar charts, and geographic comparisons across technologies and providers.</li>
+                    </ul>
+              
+                    <h3 class="project-details__content-title">Results</h3>
+                    <ul>
+                      <li>Identified gaps in data consistency and corrected missing geographic identifiers.</li>
+                      <li>Observed the progressive replacement of 2G/3G networks with 4G/LTE, and the initial expansion of 5G.</li>
+                      <li>Visualizations highlight regional differences in connectivity and provider coverage shares.</li>
+                    </ul>
+              
+                  </div>
             </div>
             <div class="project-details__tools-used">
             <h3 class="project-details__content-title">Tools Used</h3>
@@ -141,7 +138,6 @@
               <div class="skills__skill">Pandas</div>
               <div class="skills__skill">Seaborn</div>
               <div class="skills__skill">Matplotlib</div>
-              <div class="skills__skill">Scipy</div>
               <div class="skills__skill">Jupyter Notebook</div>
               <div class="skills__skill">Visual Studio Code</div>
             </div>
